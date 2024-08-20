@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root{
+    --background: #021526;
+    --highlight: #03346E;
+    --text: #E2E2B6;
+    --light: #6EACDA;
+
+
+}
+
+body{
+    background-color: var(--background);
+    color: var(--text);
+}
+
+h1{
+    font-family: MuseoModerno;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:120px;
+    max-width: 500px;
+    margin: 120px auto 0 auto;
+}
+
+.status{
+    padding: 30px;
+    border-radius:20px;
+    border: 2px solid var(--light);
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+}
+
+.details{
+    width: 100%;
+}
+
+.details p{
+    margin: 0.5%;
+}
+#pbar{
+    margin-top: 20px;
+    width: 100%;
+    height: 10px;
+    background-color: var(--highlight);
+    border-radius: 5px;
+
+}
+
+#progress{
+    width: 0%;
+    height: 10px;
+    background-color: aqua;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#number{
+    width: 100px;
+    height: 100px;
+    background-color: var(--light);
+    color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+form{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    outline: none;
+}
+
+input{
+    flex: 1;
+    padding: 16px;
+    background-color: var(--highlight);
+    border-radius: 10px;
+    border: 1px solid var(--light);
+    color: var(--text);
+    outline: none;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: var(--light);
+    color: var(--background);
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+}
+
+.taskitems{
+    display: flex;
+    background-color: var(--highlight);
+    padding:10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    border: 1px solid var(--light);
+    align-items: center;
+}
+
+.tsk{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.complete p{
+    text-decoration: line-through;
+    color: aqua;
+}
+
+
+
+.tsk input{
+    width: 15px;
+    height: 15px;
+}
+
+.taskitems img{
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.task{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    width: 100%;
+    list-style: none;
+}
+ @media(max-width:480px){
+    .container{
+        width: 80%;
+    }
+    .details{
+        width:80%;
+    }
+    .container p{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 1.2em;
+    }
+    #number{
+        font-size: 20px ;
+    }
+    button{
+        font-size: 20px;
+    }
+    .status{
+        gap: 25px;
+    }
+    .tsk{
+        gap:5px;
+    }
+    .task{
+        gap:5px;
+    }
+    .taskitems img{
+        width: 22px;
+        height: 22px;
+    }
+ }
