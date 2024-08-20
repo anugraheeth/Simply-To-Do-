@@ -18,6 +18,9 @@ Simply To-Do is a lightweight, responsive web application designed to help you m
   
 - **todo.js:** This script file handles the logic of the to-do list application. It includes functions for adding, editing, deleting, and toggling tasks as complete. The app uses `localStorage` to save tasks persistently on the client side&#8203;:contentReference[oaicite:2]{index=2}.
 
+## Live Demo
+
+[Click here to see the live demo](https://anugraheeth.github.io/Simply-To-Do-/)
 ## Installation
 
 To run this project locally:
